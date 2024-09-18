@@ -1,0 +1,195 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="564.8,1627.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="NAME: BHANU PRIYA S&#xA;ROLL NO :220701040&#xA;CLASS: CSE A" DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="512,1562.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="result" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="449.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter consumped units of current" Title="EB -BILL">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[result]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: TANGEDCO Online Payment" sap:VirtualizedContainerService.HintSize="450,1140" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9234fa39-70c2-46f8-bc86-b5d7cc726cce" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,900" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="TotalAmount" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Consumed Units'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9234fa39-70c2-46f8-bc86-b5d7cc726cce" Text="[result]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e1s1" CVScreenId="3d69ef2a-7ef6-426e-b1e0-718eb9ca102e" CvElementArea="946, 511, 146, 24" CvType="InputBox" DesignTimeRectangle="947, 512, 144, 22" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tableRow='7' tag='TABLE' /&gt;&lt;webctrl id='calculator:unit' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:unit' type='text' tag='INPUT' class='ui-inputfield ui-inputtext ui-widget ui-state-default ui-corner-all' aaname='' /&gt;" Guid="87da033b-b8f3-4bc0-8598-84be755e1279" InformativeScreenshot="e7e62e979013caa4dfeb65a998e97cb7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TANGEDCO Online Payment' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3d69ef2a-7ef6-426e-b1e0-718eb9ca102e" CvTextArea="675, 517, 88, 11" CvTextArgument="Consumed Units:" CvType="Text" DesignTimeRectangle="676, 517, 87, 12" ElementType="Text" FullSelectorArgument="&lt;webctrl id='calculator:calfiled' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='calculator:calfiled' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Consumed Units:' check:innerText='Consumed Units:' /&gt;" Guid="e19dc1d9-13c8-4e43-a830-dad1febf753d" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Calculate'" sap:VirtualizedContainerService.HintSize="354,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9234fa39-70c2-46f8-bc86-b5d7cc726cce" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e1s1" CVScreenId="3d69ef2a-7ef6-426e-b1e0-718eb9ca102e" CvElementArea="951, 629, 74, 29" CvTextArea="963, 637, 50, 11" CvTextArgument="Calculate" CvType="Button" DesignTimeRectangle="954, 632, 69, 24" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='2' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='ui-button-text' aaname='Calculate' check:innerText='Calculate' /&gt;" Guid="2386381f-ee07-4182-b0b4-f5bdf3960582" InformativeScreenshot="5500fbe110df289e18f44079c5da43bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TANGEDCO Online Payment' /&gt;" SearchSteps="Selector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="3d69ef2a-7ef6-426e-b1e0-718eb9ca102e" CvElementArea="951, 629, 74, 29" CvTextArea="963, 637, 50, 11" CvTextArgument="Calculate" CvType="Button" DesignTimeRectangle="953, 631, 71, 26" ElementType="Button" FullSelectorArgument="&lt;webctrl idx='2' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id='calculator:tt1' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='calculator:tt1' type='submit' tag='BUTTON' class='ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only' aaname='Calculate' check:innerText='Calculate' /&gt;" Guid="eba3173a-04ce-4bdb-a5f2-d29bede782f5" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Net Amount Rs.'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="9234fa39-70c2-46f8-bc86-b5d7cc726cce" TextString="[TotalAmount]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.tnebnet.org/awp/tariffMaster?execution=e1s2" CVScreenId="b69ec70e-f908-44a2-a205-036418f4b7bd" CvTextArea="767, 810, 37, 10" CvType="AnyWordGroup" DesignTimeRectangle="766, 809, 40, 14" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='1805.0' tableRow='27' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' /&gt;" Guid="297868af-db7d-4820-967e-efa428f60177" InformativeScreenshot="7f2fbd326b3fd2d19fe655855a4d4431.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='TANGEDCO Online Payment' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="b69ec70e-f908-44a2-a205-036418f4b7bd" CvTextArea="620, 810, 84, 11" CvTextArgument="Net Amount Rs." CvType="Text" DesignTimeRectangle="620, 809, 87, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='27' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Net Amount Rs.' check:innerText='Net Amount Rs.' /&gt;" Guid="31053268-9b78-46e8-8701-122df4a978c2" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="354,110" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Your amount is:&quot;+ TotalAmount]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="4d49b8eeda7b2dd5865c288168c34341.jpg" Selector="&lt;html app='chrome.exe' title='TANGEDCO Online Payment' /&gt;" Title="TANGEDCO Online Payment" Url="https://www.tnebnet.org/awp/tariffMaster;jsessionid=x6Br0jyBDvXskK3Ufo8iqZ3Ba?execution=e1s1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
